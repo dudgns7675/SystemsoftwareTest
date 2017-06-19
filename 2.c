@@ -6,9 +6,11 @@ int main(void)
 {
 	int i;
 	void *p;
-	void (*f)();
+	void (*f)(int);
 
 	p = malloc(1024);
+
+	brk(0);
 
 	for(i=0; i<1000; i++)
 	{
